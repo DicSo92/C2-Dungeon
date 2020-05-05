@@ -8,5 +8,9 @@ namespace C2_Dungeon
 {
     class Thief
     {
+        public Thief()
+        {
+
+        }
     }
 }

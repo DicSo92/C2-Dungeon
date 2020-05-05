@@ -8,5 +8,9 @@ namespace C2_Dungeon
 {
     class Barbarian
     {
+        public Barbarian()
+        {
+
+        }
     }
 }

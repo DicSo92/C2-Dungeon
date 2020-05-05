@@ -8,9 +8,14 @@ namespace C2_Dungeon
 {
     class Character
     {
-        int m_iHealthPoints = 100;
-        int m_iAttack = 10;
+        int m_iHealthPoints;
 
         Weapon m_Weapon;
+
+        public Character(int p_iHealthPoints)
+        {
+            m_iHealthPoints = p_iHealthPoints;
+            m_Weapon = new Weapon();
+        }
     }
 }

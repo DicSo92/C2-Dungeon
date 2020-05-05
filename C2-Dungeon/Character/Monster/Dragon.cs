@@ -8,5 +8,9 @@ namespace C2_Dungeon
 {
     class Dragon
     {
+        public Dragon()
+        {
+
+        }
     }
 }
