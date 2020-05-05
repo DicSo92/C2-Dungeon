@@ -9,5 +9,10 @@ namespace C2_Dungeon
     class Weapon
     {
         int m_iAttackPoints;
+
+        public Weapon()
+        {
+
+        }
     }
 }

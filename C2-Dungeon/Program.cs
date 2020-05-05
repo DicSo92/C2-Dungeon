@@ -13,7 +13,8 @@ namespace C2_Dungeon
 
         static void Main(string[] args)
         {
-            Heros hero1 = new Heros("Conan");
+            Heros newHero = new Heros("Conan");
+            Dungeon newDungeon = new Dungeon();
         }
     }
 }

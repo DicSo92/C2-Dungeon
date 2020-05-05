@@ -15,5 +15,11 @@ namespace C2_Dungeon
         Room m_Room4;
         Room m_Room5;
         DragonsLair m_DragonsLair;
+
+        public Dungeon()
+        {
+            m_Room1 = new Room(0);
+            m_DragonsLair = new DragonsLair();
+        }
     }
 }

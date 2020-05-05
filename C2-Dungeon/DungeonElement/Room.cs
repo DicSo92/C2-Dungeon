@@ -12,5 +12,10 @@ namespace C2_Dungeon
 
         Monster m_Monster;
         Chest m_Chest;
+
+        public Room(int p_iCurrentRoom)
+        {
+            m_iCurrentRoom = p_iCurrentRoom;
+        }
     }
 }

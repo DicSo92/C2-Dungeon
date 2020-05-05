@@ -9,5 +9,10 @@ namespace C2_Dungeon
     class DragonsLair
     {
         Dragon m_Dragon;
+
+        public DragonsLair()
+        {
+            m_Dragon = new Dragon();
+        }
     }
 }
