@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character\Monster\Barbarian.cs" />
+    <Compile Include="DungeonElement\DragonsLair.cs" />
     <Compile Include="Items\Chest.cs" />
     <Compile Include="Character\Monster\Dragon.cs" />
     <Compile Include="DungeonElement\Dungeon.cs" />

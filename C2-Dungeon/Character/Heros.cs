@@ -8,5 +8,8 @@ namespace C2_Dungeon
 {
     class Heros
     {
+        int m_iDefensePoints = 50;
+
+        Protection m_Protection;
     }
 }

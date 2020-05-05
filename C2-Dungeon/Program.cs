@@ -8,6 +8,9 @@ namespace C2_Dungeon
 {
     class Program
     {
+        public const int ROOM_COUNT = 5;
+        public const int STARTING_WEAPON_COUNT = 10;
+
         static void Main(string[] args)
         {
         }

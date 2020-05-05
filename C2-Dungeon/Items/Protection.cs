@@ -8,5 +8,6 @@ namespace C2_Dungeon
 {
     class Protection
     {
+        int m_iDefensePoints;
     }
 }

@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace C2_Dungeon
 {
-    class Room
+    class DragonsLair
     {
-        int m_iCurrentRoom;
-
-        Monster m_Monster;
-        Chest m_Chest;
+        Dragon m_Dragon;
     }
 }
