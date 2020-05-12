@@ -11,6 +11,7 @@ namespace C2_Dungeon
         #region VariableInit
             int m_iDefensePoints;
             string m_sName;
+            Weapon weapon;
 
             Protection m_Protection;
         #endregion
@@ -24,6 +25,7 @@ namespace C2_Dungeon
                 m_iDefensePoints = 5;
                 m_Protection = new Protection();
                 m_sName = "Thor";
+                /// userInterface.displayInfo(Program.debug, "On est dans le constructeur par defaut de  heros");
             }
             /// <summary>
             /// Hero Class, required name
@@ -32,6 +34,13 @@ namespace C2_Dungeon
             public Heros(string p_sName)
             {
                 m_sName = p_sName;
+                weapon = new Weapon(10);
+                /// userInterface.displayInfo(Program.debug, "On est dans le constructeur avec arguments de heros : ", m_sName);
+            }
+
+            public void FindWeapon(Weapon myWeapon)
+            {
+                weapon += myWeapon;
             }
         #endregion
     }

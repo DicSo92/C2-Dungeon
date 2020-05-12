@@ -10,9 +10,13 @@ namespace C2_Dungeon
     {
         int m_iAttackPoints;
 
-        public Weapon()
+        public Weapon(int p_iAttackPoints)
         {
-
+            m_iAttackPoints = p_iAttackPoints;
+        }
+        public static Weapon operator+(Weapon a, Weapon b)
+        {
+            return new Weapon(a.m_iAttackPoints + b.m_iAttackPoints);
         }
     }
 }
