@@ -6,13 +6,21 @@ using System.Threading.Tasks;
 
 namespace C2_Dungeon
 {
+    enum PROTECTIONS_TYPE
+    {
+        CAPE,
+        PENDENTIF,
+        SHIELD
+
+    }
     class Protection
     {
         int m_iDefensePoints;
-
-        public Protection()
+        PROTECTIONS_TYPE mType;
+        public Protection(int p_iDefensePoints, PROTECTIONS_TYPE type)
         {
-
+            m_iDefensePoints = p_iDefensePoints;
+            mType = type;
         }
     }
 }

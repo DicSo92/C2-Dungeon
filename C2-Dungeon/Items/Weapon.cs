@@ -6,17 +6,35 @@ using System.Threading.Tasks;
 
 namespace C2_Dungeon
 {
+    enum WEAPONS_TYPE
+    {
+        BOW,
+        FLASK,
+        DAGGER,
+        SWORD,
+        ICE_ARROW,
+        LIGHTNING
+    }
+
     class Weapon
     {
         int m_iAttackPoints;
+        WEAPONS_TYPE myType;
 
-        public Weapon(int p_iAttackPoints)
+        public Weapon(int p_iAttackPoints, WEAPONS_TYPE type)
         {
             m_iAttackPoints = p_iAttackPoints;
+            myType = type;
         }
+
         public static Weapon operator+(Weapon a, Weapon b)
         {
-            return new Weapon(a.m_iAttackPoints + b.m_iAttackPoints);
+            if (a.myType == b.myType)
+            {
+                return new Weapon(a.m_iAttackPoints + b.m_iAttackPoints, a.myType);
+            }
+            return null;
         }
+
     }
 }

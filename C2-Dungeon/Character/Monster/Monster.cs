@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace C2_Dungeon
 {
+    enum MONSTERS_TYPE
+    {
+        BARBARIAN,
+        MAGICIAN,
+        THIEF
+    }
     class Monster
     {
         public Monster()
