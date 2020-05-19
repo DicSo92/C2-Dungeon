@@ -1,4 +1,5 @@
 ﻿using C2_Dungeon;
+using C2_Dungeon.Communication;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,28 +18,32 @@ namespace C2_Dungeon
         public Dungeon()
         {
             for (int i = 0; i < m_ArrayRoom.Length; i++)
-            {
-                m_ArrayRoom[i] = new Room(i);
+                m_ArrayRoom[i] = new Room(i, this);
 
-            }
             m_DragonsLair = new DragonsLair();
         }
 
         internal void Enter(Heros newHero)
         {
-            throw new NotImplementedException();
+            //EnterRoom(0 , newHero);
+            UserInterface.displayInfo(true, "Hero enter Dungeon !");
+
+            for (int i = 0; i < m_ArrayRoom.Length; i++)
+                m_ArrayRoom[i].Enter(newHero);
+
+            m_DragonsLair.Enter(newHero);
         }
 
-        public void EnterRoom (int index, Heros newHero)
-        {
-            if (index < m_ArrayRoom.Length)
-            {
-                m_ArrayRoom[index].Enter(newHero);
-            }
-            else
-            {
-                m_DragonsLair.Enter(newHero);
-            }
-        }
+        //public void EnterRoom (int index, Heros newHero)
+        //{
+        //    if (index < m_ArrayRoom.Length)
+        //    {
+        //        m_ArrayRoom[index].Enter(newHero);
+        //    }
+        //    else
+        //    {
+        //        m_DragonsLair.Enter(newHero);
+        //    }
+        //}
     }
 }

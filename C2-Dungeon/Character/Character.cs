@@ -8,14 +8,27 @@ namespace C2_Dungeon
 {
     class Character
     {
-        int m_iHealthPoints;
+        protected int m_iHealthPoints;
 
-        Weapon m_Weapon;
+        protected Weapon m_Weapon;
 
         public Character(int p_iHealthPoints)
         {
             m_iHealthPoints = p_iHealthPoints;
-            m_Weapon = new Weapon();
+
+            //m_Weapon = new Weapon(m_AtkPoint);
+            
+        }
+
+        public void Attack(Character character)
+        {
+            character.RemoveLifePoints();
+        }
+
+        private void RemoveLifePoints()
+        {
+            m_iHealthPoints -= m_Weapon.m_iAttackPoints;
+
         }
     }
 }

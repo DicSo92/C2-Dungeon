@@ -10,12 +10,14 @@ namespace C2_Dungeon.Communication
     {
         static public void displayInfo(bool debug, params string[] infos)
         {
-
-            Console.WriteLine(infos[0]);
+            if ((Program.DEBUG_MODE && debug) || !debug)
+            {
+                Console.WriteLine(infos[0]);
+            } 
         }
         public UserInterface()
         {
-           
+            
         }
     }
 }

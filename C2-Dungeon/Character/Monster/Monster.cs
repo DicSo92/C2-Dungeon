@@ -12,9 +12,9 @@ namespace C2_Dungeon
         MAGICIAN,
         THIEF
     }
-    class Monster
+    class Monster : Character
     {
-        public Monster()
+        public Monster() : base(100)
         {
 
         }

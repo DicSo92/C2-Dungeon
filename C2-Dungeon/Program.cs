@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C2_Dungeon.Communication;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,15 +11,17 @@ namespace C2_Dungeon
     {
         public const int ROOM_COUNT = 5;
         public const int STARTING_WEAPON_COUNT = 10;
+        public const bool DEBUG_MODE = false;
 
         static void Main(string[] args)
         {
+            UserInterface.displayInfo(false, "Welcome to my Dungeon ! Have fun");
             Heros newHero = new Heros("Conan");
             Dungeon newDungeon = new Dungeon();
 
             newDungeon.Enter(newHero);
+
+            Console.ReadLine();
         }
-
-
     }
 }

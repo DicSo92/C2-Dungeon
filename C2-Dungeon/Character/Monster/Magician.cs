@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 namespace C2_Dungeon
 {
 
-
     class Magician : Monster
     {
 
         public Magician()
         {
+            m_Weapon = new Weapon(10, WEAPONS_TYPE.LIGHTNING);
 
         }
     }

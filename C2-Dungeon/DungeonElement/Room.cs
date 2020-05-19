@@ -9,12 +9,15 @@ namespace C2_Dungeon
     class Room
     {
         int m_iCurrentRoom;
+        Dungeon m_currentDungeon;
 
         Monster m_Monster;
         Chest m_Chest;
 
-        public Room(int p_iCurrentRoom)
+        public Room(int p_iCurrentRoom, Dungeon dungeon)
         {
+            m_currentDungeon = dungeon;
+
             m_iCurrentRoom = p_iCurrentRoom;
 
             Random rand = new Random();
@@ -43,9 +46,13 @@ namespace C2_Dungeon
             m_Monster = monster;
         }
 
-        internal void Enter(Heros newHero)
+        internal virtual void Enter(Heros newHero)
         {
-            throw new NotImplementedException();
+            m_Monster.Attack(newHero);
+            newHero.Attack(m_Monster);
+
+
+
         }
 
 

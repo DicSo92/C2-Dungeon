@@ -10,7 +10,7 @@ namespace C2_Dungeon
     {
         public Barbarian()
         {
-
+            m_Weapon = new Weapon(10, WEAPONS_TYPE.SWORD);
         }
     }
 }

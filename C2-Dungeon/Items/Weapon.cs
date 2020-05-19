@@ -22,7 +22,7 @@ namespace C2_Dungeon
 
     class Weapon
     {
-        int m_iAttackPoints;
+        public int m_iAttackPoints;
         WEAPONS_TYPE myType;
 
         public Weapon(int p_iAttackPoints, WEAPONS_TYPE type)

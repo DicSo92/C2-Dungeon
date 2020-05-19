@@ -16,5 +16,9 @@ namespace C2_Dungeon
 
 
         }
+        internal override void Enter(Heros newHero)
+        {
+           
+        }
     }
 }
