@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace C2_Dungeon
 {
-    class DragonsLair
+    class DragonsLair : Room
     {
-        Dragon m_Dragon;
+        //Dragon m_Dragon;
 
-        public DragonsLair()
+        public DragonsLair() : base(new Dragon())
         {
-            m_Dragon = new Dragon();
+            //m_Dragon = new Dragon();
+
+
         }
     }
 }

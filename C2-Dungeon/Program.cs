@@ -15,6 +15,10 @@ namespace C2_Dungeon
         {
             Heros newHero = new Heros("Conan");
             Dungeon newDungeon = new Dungeon();
+
+            newDungeon.Enter(newHero);
         }
+
+
     }
 }

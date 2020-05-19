@@ -9,17 +9,36 @@ namespace C2_Dungeon
 {
     class Dungeon
     {
-        Room m_Room1;
-        Room m_Room2;
-        Room m_Room3;
-        Room m_Room4;
-        Room m_Room5;
+        private Room[] m_ArrayRoom = new Room[Program.ROOM_COUNT];
+
         DragonsLair m_DragonsLair;
+
 
         public Dungeon()
         {
-            m_Room1 = new Room(0);
+            for (int i = 0; i < m_ArrayRoom.Length; i++)
+            {
+                m_ArrayRoom[i] = new Room(i);
+
+            }
             m_DragonsLair = new DragonsLair();
+        }
+
+        internal void Enter(Heros newHero)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void EnterRoom (int index, Heros newHero)
+        {
+            if (index < m_ArrayRoom.Length)
+            {
+                m_ArrayRoom[index].Enter(newHero);
+            }
+            else
+            {
+                m_DragonsLair.Enter(newHero);
+            }
         }
     }
 }

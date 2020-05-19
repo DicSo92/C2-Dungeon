@@ -16,6 +16,38 @@ namespace C2_Dungeon
         public Room(int p_iCurrentRoom)
         {
             m_iCurrentRoom = p_iCurrentRoom;
+
+            Random rand = new Random();
+
+            //int random = rand.Next(0, 4);
+            int random = rand.Next(1, 3);
+
+            switch (random)
+            {
+                case 1:
+                    this.m_Monster = new Barbarian();
+                    break;
+                case 2:
+                    this.m_Monster = new Magician();
+                    break;
+                case 3:
+                    this.m_Monster = new Thief();
+                    break;
+                default:
+                    break;
+            }
         }
+
+        protected Room (Monster monster)
+        {
+            m_Monster = monster;
+        }
+
+        internal void Enter(Heros newHero)
+        {
+            throw new NotImplementedException();
+        }
+
+
     }
 }

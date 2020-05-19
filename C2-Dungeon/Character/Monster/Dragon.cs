@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C2_Dungeon
 {
-    class Dragon
+    class Dragon : Monster
     {
         public Dragon()
         {
