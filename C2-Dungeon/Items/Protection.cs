@@ -9,7 +9,7 @@ namespace C2_Dungeon
     enum PROTECTIONS_TYPE
     {
         CAPE,
-        PENDENTIF,
+        PENDENT,
         SHIELD
 
     }

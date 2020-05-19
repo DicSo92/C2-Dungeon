@@ -23,7 +23,7 @@ namespace C2_Dungeon
             public Heros()
             {
                 m_iDefensePoints = 5;
-                m_Protection = new Protection();
+                m_Protection = new Protection(10, PROTECTIONS_TYPE.SHIELD);
                 m_sName = "Thor";
                 /// userInterface.displayInfo(Program.debug, "On est dans le constructeur par defaut de  heros");
             }
@@ -34,7 +34,7 @@ namespace C2_Dungeon
             public Heros(string p_sName)
             {
                 m_sName = p_sName;
-                weapon = new Weapon(10);
+                weapon = new Weapon(10, WEAPONS_TYPE.ARROW);
                 /// userInterface.displayInfo(Program.debug, "On est dans le constructeur avec arguments de heros : ", m_sName);
             }
 

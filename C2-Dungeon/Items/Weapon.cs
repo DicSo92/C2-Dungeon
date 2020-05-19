@@ -12,8 +12,12 @@ namespace C2_Dungeon
         FLASK,
         DAGGER,
         SWORD,
+        ARROW,
         ICE_ARROW,
-        LIGHTNING
+        LIGHTNING,
+        SPIKE,
+        CLAWS,
+        FLAME,
     }
 
     class Weapon
