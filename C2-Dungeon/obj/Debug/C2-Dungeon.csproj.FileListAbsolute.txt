@@ -1,7 +1,0 @@
-C:\Users\luzzi\source\repos\C2-Dungeon\C2-Dungeon\bin\Debug\C2-Dungeon.exe.config
-C:\Users\luzzi\source\repos\C2-Dungeon\C2-Dungeon\bin\Debug\C2-Dungeon.exe
-C:\Users\luzzi\source\repos\C2-Dungeon\C2-Dungeon\bin\Debug\C2-Dungeon.pdb
-C:\Users\luzzi\source\repos\C2-Dungeon\C2-Dungeon\obj\Debug\C2-Dungeon.csprojAssemblyReference.cache
-C:\Users\luzzi\source\repos\C2-Dungeon\C2-Dungeon\obj\Debug\C2-Dungeon.csproj.CoreCompileInputs.cache
-C:\Users\luzzi\source\repos\C2-Dungeon\C2-Dungeon\obj\Debug\C2-Dungeon.exe
-C:\Users\luzzi\source\repos\C2-Dungeon\C2-Dungeon\obj\Debug\C2-Dungeon.pdb
