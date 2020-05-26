@@ -15,7 +15,7 @@ namespace C2_Dungeon
 
         static void Main(string[] args)
         {
-            UserInterface.displayInfo(false, "Welcome to my Dungeon ! Have fun");
+            UserInterface.DisplayInfo(false, "Welcome to my Dungeon ! Have fun");
             Heros newHero = new Heros("Conan");
             Dungeon newDungeon = new Dungeon();
 

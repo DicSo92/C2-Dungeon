@@ -8,7 +8,7 @@ namespace C2_Dungeon.Communication
 {
     class UserInterface
     {
-        static public void displayInfo(bool debug, params string[] infos)
+        static public void DisplayInfo(bool debug, params string[] infos)
         {
             if ((Program.DEBUG_MODE && debug) || !debug)
             {

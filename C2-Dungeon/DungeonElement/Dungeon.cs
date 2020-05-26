@@ -26,7 +26,7 @@ namespace C2_Dungeon
         internal void Enter(Heros newHero)
         {
             //EnterRoom(0 , newHero);
-            UserInterface.displayInfo(true, "Hero enter Dungeon !");
+            UserInterface.DisplayInfo(true, "Hero enter Dungeon !");
 
             for (int i = 0; i < m_ArrayRoom.Length; i++)
                 m_ArrayRoom[i].Enter(newHero);
