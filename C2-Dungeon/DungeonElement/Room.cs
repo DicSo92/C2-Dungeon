@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace C2_Dungeon
@@ -14,16 +15,18 @@ namespace C2_Dungeon
         Monster m_Monster;
         Chest m_Chest;
 
-        public Room(int p_iCurrentRoom, Dungeon dungeon)
+        public Room(int p_iCurrentRoom, Dungeon dungeon, Random rand)
         {
             m_currentDungeon = dungeon;
 
             m_iCurrentRoom = p_iCurrentRoom;
 
-            Random rand = new Random();
 
-            //int random = rand.Next(0, 4);
-            int random = rand.Next(1, 3);
+            int random = rand.Next(1, 4);
+
+            //Thread.Sleep(30);
+
+            //Console.WriteLine(random);
 
             switch (random)
             {

@@ -16,10 +16,17 @@ namespace C2_Dungeon
 
         public override void Attack(Character character)
         {
+            WeaponAttack();
+            base.Attack(character);
         }
 
         public override void RemoveLifePoints()
         {
+        }
+
+        private void WeaponAttack()
+        {
+            UserInterface.DisplayInfo(false, "Arrow attack from Thief");
         }
     }
 }

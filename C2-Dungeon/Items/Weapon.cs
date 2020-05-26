@@ -40,5 +40,9 @@ namespace C2_Dungeon
             return null;
         }
 
+        public WEAPONS_TYPE getWeaponType()
+        {
+            return myType;
+        }
     }
 }

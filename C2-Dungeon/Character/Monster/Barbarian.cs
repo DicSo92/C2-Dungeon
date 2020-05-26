@@ -16,10 +16,18 @@ namespace C2_Dungeon
 
         public override void Attack(Character character)
         {
+            //UserInterface.DisplayInfo(false, "The barbarian attacking you with : ", m_Weapon.ToString());
+            WeaponAttack();
+            base.Attack(character);
         }
 
         public override void RemoveLifePoints()
         {
+        }
+
+        private void WeaponAttack()
+        {
+            UserInterface.DisplayInfo(false, "Sword attack from Brabarian");
         }
     }
 }

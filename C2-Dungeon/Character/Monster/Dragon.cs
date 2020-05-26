@@ -15,10 +15,17 @@ namespace C2_Dungeon
 
         public override void Attack(Character character)
         {
+            DragonAttack();
+            base.Attack(character);
         }
 
         public override void RemoveLifePoints()
         {
+        }
+
+        private void DragonAttack()
+        {
+            UserInterface.DisplayInfo(false, "Fire and blood, Dragon attack !");
         }
     }
 }

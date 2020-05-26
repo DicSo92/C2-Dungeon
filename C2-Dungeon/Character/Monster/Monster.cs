@@ -26,5 +26,15 @@ namespace C2_Dungeon
         {
             return m_MonsterType;
         }
+
+        public override void Attack(Character character)
+        {
+            UserInterface.DisplayInfo(false, m_MonsterType.ToString(), " attacking you with : ", m_Weapon.getWeaponType().ToString());
+        }
+
+        public override void RemoveLifePoints()
+        {
+        }
+
     }
 }

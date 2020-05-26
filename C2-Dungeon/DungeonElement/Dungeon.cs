@@ -16,8 +16,10 @@ namespace C2_Dungeon
 
         public Dungeon()
         {
+            Random rand = new Random(DateTime.Now.Millisecond);
+
             for (int i = 0; i < m_ArrayRoom.Length; i++)
-                m_ArrayRoom[i] = new Room(i, this);
+                m_ArrayRoom[i] = new Room(i, this, rand);
 
             m_DragonsLair = new DragonsLair();
         }
