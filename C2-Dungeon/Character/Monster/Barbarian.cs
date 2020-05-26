@@ -11,6 +11,15 @@ namespace C2_Dungeon
         public Barbarian()
         {
             m_Weapon = new Weapon(10, WEAPONS_TYPE.SWORD);
+            m_MonsterType = MONSTERS_TYPE.BARBARIAN;
+        }
+
+        public override void Attack(Character character)
+        {
+        }
+
+        public override void RemoveLifePoints()
+        {
         }
     }
 }

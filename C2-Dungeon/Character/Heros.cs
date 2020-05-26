@@ -29,6 +29,18 @@ namespace C2_Dungeon
                 m_Protection = new Protection(10, PROTECTIONS_TYPE.SHIELD); 
         }
 
+        public override void Attack(Character character)
+        {
+            Monster m_Monster = (Monster)character;
+            MONSTERS_TYPE mType = m_Monster.GetMonsterType();
+            UserInterface.DisplayInfo(false, "You are attaking a : ", mType.ToString());
+        }
+
+        public override void RemoveLifePoints()
+        {
+
+        }
+
         //public void FindWeapon(Weapon myWeapon)
         //    {
         //        weapon += myWeapon;

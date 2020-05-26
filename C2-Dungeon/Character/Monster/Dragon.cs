@@ -10,7 +10,15 @@ namespace C2_Dungeon
     {
         public Dragon()
         {
+            m_MonsterType = MONSTERS_TYPE.DRAGON;
+        }
 
+        public override void Attack(Character character)
+        {
+        }
+
+        public override void RemoveLifePoints()
+        {
         }
     }
 }

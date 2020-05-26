@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C2_Dungeon.Communication
+namespace C2_Dungeon
 {
     class UserInterface
     {
@@ -12,7 +12,11 @@ namespace C2_Dungeon.Communication
         {
             if ((Program.DEBUG_MODE && debug) || !debug)
             {
-                Console.WriteLine(infos[0]);
+                foreach (var item in infos)
+                {
+                    Console.Write(item);
+                }
+                Console.WriteLine();
             } 
         }
         public UserInterface()

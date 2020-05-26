@@ -10,13 +10,21 @@ namespace C2_Dungeon
     {
         BARBARIAN,
         MAGICIAN,
-        THIEF
+        THIEF,
+        DRAGON
     }
-    class Monster : Character
+    abstract class Monster : Character
     {
+        protected MONSTERS_TYPE m_MonsterType;
+
         public Monster() : base(100)
         {
 
+        }
+
+        internal MONSTERS_TYPE GetMonsterType()
+        {
+            return m_MonsterType;
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C2_Dungeon
 {
-    class Character
+    abstract class Character
     {
         protected int m_iHealthPoints;
 
@@ -20,15 +20,19 @@ namespace C2_Dungeon
             
         }
 
-        public void Attack(Character character)
-        {
-            character.RemoveLifePoints();
-        }
+        //public void Attack(Character character)
+        //{
+        //    character.RemoveLifePoints();
+        //}
 
-        private void RemoveLifePoints()
-        {
-            m_iHealthPoints -= m_Weapon.m_iAttackPoints;
+        //private void RemoveLifePoints()
+        //{
+        //    m_iHealthPoints -= m_Weapon.m_iAttackPoints;
 
-        }
+        //}
+
+        public abstract void Attack(Character character);
+
+        public abstract void RemoveLifePoints();
     }
 }

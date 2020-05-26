@@ -15,7 +15,15 @@ namespace C2_Dungeon
         public Magician()
         {
             m_Weapon = new Weapon(10, WEAPONS_TYPE.LIGHTNING);
+            m_MonsterType = MONSTERS_TYPE.MAGICIAN;
+        }
 
+        public override void Attack(Character character)
+        {
+        }
+
+        public override void RemoveLifePoints()
+        {
         }
     }
 }
