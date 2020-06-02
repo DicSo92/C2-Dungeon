@@ -41,6 +41,30 @@ namespace C2_Dungeon
 
         }
 
+        public void RemoveHealthPoints(int p_iHealthPoints)
+        {
+            int currentHealthPoints = m_iHealthPoints;
+            m_iHealthPoints -= p_iHealthPoints;
+            UserInterface.DisplayInfo(false, "You lose : ", p_iHealthPoints.ToString(), " health points !");
+
+            if (m_iHealthPoints < 0)
+            {
+                DeadSequence();
+            }
+            else
+            {
+                UserInterface.DisplayInfo(false, "Passing from : ", currentHealthPoints.ToString(), " health points, to : ", m_iHealthPoints.ToString(), " health points !");
+            }
+        }
+
+        private void DeadSequence()
+        {
+            m_bIsDead = true;
+            UserInterface.DisplayInfo(false, "Your Dead !");
+        }
+
+
+
         //public void FindWeapon(Weapon myWeapon)
         //    {
         //        weapon += myWeapon;

@@ -10,14 +10,17 @@ namespace C2_Dungeon
     {
         protected int m_iHealthPoints;
 
+        protected bool m_bIsDead;
+
         protected Weapon m_Weapon;
 
         public Character(int p_iHealthPoints)
         {
             m_iHealthPoints = p_iHealthPoints;
+            m_bIsDead = false;
 
             //m_Weapon = new Weapon(m_AtkPoint);
-            
+
         }
 
         //public void Attack(Character character)

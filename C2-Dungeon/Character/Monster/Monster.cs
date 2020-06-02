@@ -29,7 +29,11 @@ namespace C2_Dungeon
 
         public override void Attack(Character character)
         {
+            Heros m_Heros = (Heros)character;
+
             UserInterface.DisplayInfo(false, m_MonsterType.ToString(), " attacking you with : ", m_Weapon.getWeaponType().ToString());
+
+            m_Heros.RemoveHealthPoints(30);
         }
 
         public override void RemoveLifePoints()
